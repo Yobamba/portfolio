@@ -1,17 +1,15 @@
-
-
 .header-nav {
     background-color: #376996;
     color: white;
     display: flex;
     justify-content: center;
+    height: 100px;
+    align-items: center;
 }
 
 a:link, a:visited {
     color: #F24333;
 }
-
-
 
 .screenshots {
     height: 500px;
@@ -29,7 +27,6 @@ ul {
 
 ul li {
     font-size: 30px;
-
 }
 
 #about_me {
