@@ -35,6 +35,12 @@ ul li {
 #about_me {
     display: flex;
     gap: 10px;
-    justify-content: center;
-    
+    justify-content: center;   
+
 }
+
+#about_me li a:link,
+#about_me li a:visited {
+    color: white;
+}
+
