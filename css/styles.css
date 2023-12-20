@@ -41,3 +41,32 @@ ul li {
     color: white;
 }
 
+#socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: darkgray;
+    color: black;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: 0.5rem;
+}
+
+.icon {
+    width: 100px;
+}
+
+#social-ul {
+    display: flex;
+    justify-content: end;
+    height: 85px;
+}
+
+#github-link {
+    height: 85px;
+}
+
+@media screen and (max-width: 1020px) {
+    #socials {
+      display: none;
+    }
+}
