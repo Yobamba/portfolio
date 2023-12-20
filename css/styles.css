@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
 .header-nav {
     background-color: #376996;
     color: white;
