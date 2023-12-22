@@ -77,6 +77,12 @@ ul li {
     height: 45px;
 }
 
+@media screen and (max-width: 500px) {
+    .screenshots {
+        height: 200px;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     #socials {
       display: none;
