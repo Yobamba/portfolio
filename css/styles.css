@@ -91,6 +91,12 @@ height: 45px;
 .screenshots {
 height: 174.9px;
 }
+
+#social-ul {
+    margin-right: 20px;
+}
+
+
 }
 
 @media screen and (max-width: 1020px) {
