@@ -22,7 +22,8 @@ a:link, a:visited {
 }
 
 .screenshots {
-    height: 170px;
+    height: 470px;
+    box-shadow: 1px 1px 20px black;
 }
 
 
