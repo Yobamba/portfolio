@@ -15,6 +15,9 @@ body {
     align-items: center;
 }
 
+#note_capture {
+    padding-bottom: 50px;
+}
 
 
 a:link, a:visited {
