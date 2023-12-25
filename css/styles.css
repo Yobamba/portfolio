@@ -102,6 +102,12 @@ height: 174.9px;
 
 }
 
+@media screen and (min-width: 750px) and (max-width: 900px) {
+    .screenshots {
+        height: 345px;
+        }
+}
+
 @media screen and (max-width: 1020px) {
 #socials {
 display: none;
