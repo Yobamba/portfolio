@@ -22,14 +22,51 @@
     </div>
     <div id="projects-container">
 
-        <div id="note_capture">
+        <div id="note_capture" class="proj">
             <h2><a href="https://note-capture.onrender.com/api-docs/#/" target="_blank">Note Capture Project</a></h2>
             <img src="./assets/images/notes_api_ss.png" alt="screenshot of a website" class="screenshots">
+            <div class="description">
+                <p>Crafted a robust and secure personal note-taking API, offering seamless CRUD operations
+                    for users. Leveraging MongoDB for data storage, Swagger for intuitive documentation and UI,
+                    and Supertest for thorough unit testing, the application ensures user privacy with strict 
+                    authentication and authorization controls. Elevate your note-taking experience with this 
+                    efficient and user-friendly solution.</p>
+                <span class="hidden-content description" id="note-capture-details">
+                    Key features include:
+                    <p><strong>Data Security:</strong> Utilizing MongoDB as the backend data storage solution, the Note Capture Project ensures the utmost security for your notes. Your data is stored in a robust and reliable database, safeguarding it from unauthorized access.</p>
+                    <p><strong>Intuitive Documentation and UI:</strong> Swagger is seamlessly integrated into the project, providing an intuitive and interactive documentation interface. Users can effortlessly explore and understand the API's functionalities, making the integration process smooth and developer-friendly.</p>
+                    <p><strong>Thorough Unit Testing with Supertest:</strong> Prioritizing the reliability of the API, Supertest is employed for thorough unit testing. This ensures that each component of the application functions as intended, contributing to a stable and error-free user experience.</p>
+                    <p><strong>Strict Authentication and Authorization Controls:</strong> User privacy is a top priority in the Note Capture Project. The application implements strict authentication and authorization controls, guaranteeing that only authorized users can access and manipulate their personal notes.</p>
+                    <p><strong>Elevated User Experience:</strong> The project is designed to elevate your note-taking experience. With a focus on efficiency and user-friendliness, users can perform CRUD operations seamlessly, enhancing their productivity and overall satisfaction.</p>
+                </span>
+                <button class="read-more" onclick="toggleDescription('note-capture-details')">Read more</button>
+            </div>
         </div>
         
-        <div id="goal_tracker">
+        
+        <div id="goal_tracker" class="proj">
             <h2><a href="https://yobamba.github.io/wdd330-proj/" target="_blank">Goal Tracker Project</a></h2>
+            
             <img src="./assets/images/goal_tracker.png" alt="screenshot of a website" class="screenshots">
+            
+            <div class="description">
+                <p>Empower users to set, track, and achieve their goals with this intuitive web application. 
+                    Users can seamlessly create and manage their personal goals, visualize progress, and celebrate
+                    accomplishments. Leveraging local storage for data persistence, the app ensures a seamless 
+                    user experience.</p>
+                <span class="hidden-content description" id="goal-details">
+                    Key features include:
+                    <p><strong>Goal Creation</strong>: Users can effortlessly set goals using the user-friendly interface, specifying the goal name and type (simple or checklist).</p>
+                    <p><strong>Progress Tracking</strong>: The app provides a clear overview of in-progress and completed goals. Users can dynamically track progress with percentage indicators and set completion dates.</p>
+                    <p><strong>Interactive UI</strong>: The interactive user interface allows users to update goal progress, mark goals as completed, and delete goals, providing flexibility and control over their goal management.</p>
+                    <p><strong>Data Persistence</strong>: Utilizing local storage, the app securely stores user goals, ensuring data persistence across sessions and enhancing user experience.</p>
+                    <p><strong>Responsive Design</strong>: The application is designed with a responsive layout, offering a consistent and accessible experience across various devices.</p>
+                    <p><strong>Technologies Used</strong>: The app is built using HTML, CSS, and JavaScript, with dependencies on Chart.js for data visualization. The project is bundled and managed using Parcel for efficient development and deployment.</p>
+                </span>
+                <button class="read-more" onclick='toggleDescription("goal-details")'>Read more</button>
+
+            </div>
+            
         </div>
 
         <!-- <div id="sleep_outside">
@@ -37,7 +74,7 @@
             <img src="./assets/images/sleep_outside.png" alt="screenshot of a website" class="screenshots">
         </div> -->
 
-        <div id="frontend_dev">
+        <div id="frontend_dev" class="proj">
             <h2><a href="https://yobamba.github.io/wdd230/" target="_blank">Sophmore Year Frontend Project</a></h2>
             <img src="./assets/images/junior_frontend_dev.png" alt="screenshot of a website" class="screenshots">
         </div>
@@ -68,7 +105,7 @@
             <img src="./assets/images/fake_google.png" alt="screenshot of a website" class="screenshots">
         </div> -->
 
-        <div id="white_water_rafting">
+        <div id="white_water_rafting" class="proj">
             <h2><a href="https://quartz-separate-scarecrow.glitch.me/" target="_blank">White Water Rafting Project</a></h2>
             <img src="./assets/images/white_water_rafting.png" alt="screenshot of a website" class="screenshots">
         </div>
@@ -89,7 +126,21 @@
     
 
  
+    <script>
+        function toggleDescription(descriptionId) {
+    const description = document.getElementById(descriptionId);
+    const button = document.querySelector('.read-more');
     
+    if (description && button) {
+        description.classList.toggle('expanded');
+        
+        // Change button text based on the state
+        const isExpanded = description.classList.contains('expanded');
+        button.textContent = isExpanded ? 'Read less' : 'Read more';
+    }
+}
+
+    </script>
 </body>
 </html>
 
