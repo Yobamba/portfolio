@@ -1,4 +1,3 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +21,31 @@
     </div>
     <div id="projects-container">
 
+        <div id="to-do-div" class="proj">
+            <h2><a href="https://to-do-list-manager-nu.vercel.app/" target="_blank">To-Do Manager</a></h2>
+            <img src="./assets/images/Task Manager.png" alt="screenshot of a website" class="screenshots">
+            <div class="description">
+                <p>To-Do List Manager is the ultimate task management solution designed for users seeking 
+                    simplicity and efficiency. Say goodbye to the complexities of task organization and
+                     hello to a streamlined, hassle-free experience. With its intuitive interface and 
+                     robust features, managing your to-do lists has never been easier</p>
+                <span class="hidden-content description" id="to-do-manager">
+                    <h3>Key features include:</h3>
+                    <p><strong>Effortless Task Management: </strong> Seamlessly add, edit, and delete tasks with a user-friendly interface that puts productivity at your fingertips.</p>
+                    <p><strong>Clear Progress Tracking: </strong>Mark tasks as completed or pending to gain a clear overview of your progress and priorities.</p>
+                    <p><strong>Intuitive Prioritization: </strong> Utilize drag-and-drop functionality to easily rearrange tasks and adapt to changing needs.</p>
+                    <p><strong>Secure Data Storage: </strong>Your to-do lists are stored securely using localStorage, ensuring privacy without the need for complex authentication methods.</p>
+
+                    <h3>Technology Used:</h3>
+                    <p><strong>React: </strong>Built with React, To-Do List Manager offers a modern and responsive user interface for an optimal task management experience.</p>
+                    <p><strong>JavaScript: </strong>Leveraging the power of JavaScript, To-Do List Manager delivers dynamic functionality and seamless interactions.</p>
+                    <p><strong>HTML/CSS: </strong>The application's layout and styling are crafted with HTML and CSS to provide a visually appealing and intuitive interface.</p>
+                    <p><strong>localStorage: </strong>Securely store user data directly on the device, eliminating the need for external servers and authentication processes.</p>
+                </span>
+                <button class="read-more" onclick="toggleDescription('to-do-manager')">Read more</button>
+            </div>
+        </div>
+
         <div id="note_capture" class="proj">
             <h2><a href="https://note-capture.onrender.com/api-docs/#/" target="_blank">Note Capture Project</a></h2>
             <img src="./assets/images/notes_api_ss.png" alt="screenshot of a website" class="screenshots">
@@ -32,12 +56,12 @@
                     authentication and authorization controls. Elevate your note-taking experience with this 
                     efficient and user-friendly solution.</p>
                 <span class="hidden-content description" id="note-capture-details">
-                    Key features include:
-                    <p><strong>Data Security:</strong> Utilizing MongoDB as the backend data storage solution, the Note Capture Project ensures the utmost security for your notes. Your data is stored in a robust and reliable database, safeguarding it from unauthorized access.</p>
-                    <p><strong>Intuitive Documentation and UI:</strong> Swagger is seamlessly integrated into the project, providing an intuitive and interactive documentation interface. Users can effortlessly explore and understand the API's functionalities, making the integration process smooth and developer-friendly.</p>
-                    <p><strong>Thorough Unit Testing with Supertest:</strong> Prioritizing the reliability of the API, Supertest is employed for thorough unit testing. This ensures that each component of the application functions as intended, contributing to a stable and error-free user experience.</p>
-                    <p><strong>Strict Authentication and Authorization Controls:</strong> User privacy is a top priority in the Note Capture Project. The application implements strict authentication and authorization controls, guaranteeing that only authorized users can access and manipulate their personal notes.</p>
-                    <p><strong>Elevated User Experience:</strong> The project is designed to elevate your note-taking experience. With a focus on efficiency and user-friendliness, users can perform CRUD operations seamlessly, enhancing their productivity and overall satisfaction.</p>
+                    <h3>Key features include:</h3>
+                    <p><strong>Data Security: </strong> Utilizing MongoDB as the backend data storage solution, the Note Capture Project ensures the utmost security for your notes. Your data is stored in a robust and reliable database, safeguarding it from unauthorized access.</p>
+                    <p><strong>Intuitive Documentation and UI: </strong> Swagger is seamlessly integrated into the project, providing an intuitive and interactive documentation interface. Users can effortlessly explore and understand the API's functionalities, making the integration process smooth and developer-friendly.</p>
+                    <p><strong>Thorough Unit Testing with Supertest: </strong> Prioritizing the reliability of the API, Supertest is employed for thorough unit testing. This ensures that each component of the application functions as intended, contributing to a stable and error-free user experience.</p>
+                    <p><strong>Strict Authentication and Authorization Controls: </strong> User privacy is a top priority in the Note Capture Project. The application implements strict authentication and authorization controls, guaranteeing that only authorized users can access and manipulate their personal notes.</p>
+                    <p><strong>Elevated User Experience: </strong> The project is designed to elevate your note-taking experience. With a focus on efficiency and user-friendliness, users can perform CRUD operations seamlessly, enhancing their productivity and overall satisfaction.</p>
                 </span>
                 <button class="read-more" onclick="toggleDescription('note-capture-details')">Read more</button>
             </div>
@@ -55,7 +79,7 @@
                     accomplishments. Leveraging local storage for data persistence, the app ensures a seamless 
                     user experience.</p>
                 <span class="hidden-content description" id="goal-details">
-                    Key features include:
+                    <h3>Key features include:</h3>
                     <p><strong>Goal Creation</strong>: Users can effortlessly set goals using the user-friendly interface, specifying the goal name and type (simple or checklist).</p>
                     <p><strong>Progress Tracking</strong>: The app provides a clear overview of in-progress and completed goals. Users can dynamically track progress with percentage indicators and set completion dates.</p>
                     <p><strong>Interactive UI</strong>: The interactive user interface allows users to update goal progress, mark goals as completed, and delete goals, providing flexibility and control over their goal management.</p>
@@ -109,6 +133,9 @@
             <h2><a href="https://quartz-separate-scarecrow.glitch.me/" target="_blank">White Water Rafting Project</a></h2>
             <img src="./assets/images/white_water_rafting.png" alt="screenshot of a website" class="screenshots">
         </div>
+
+
+        
     </div>
 
     <div class="header-nav">
